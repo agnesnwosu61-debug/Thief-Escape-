@@ -94,7 +94,7 @@ jobs:
           </resources>
           EOF
           cp index.html app/src/main/assets/index.html
-          cp sw.js app/src/main/assets/sw.js
+          
           ls -lh app/src/main/assets/
       - name: Build APK
         run: ./gradle-8.5/bin/gradle assembleDebug --stacktrace
